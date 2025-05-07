@@ -1,6 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
-    { "source": "/(.*)", "destination": "/index.html" }
+  "routes": [
+    { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
+    { "src": "/logo.png", "dest": "/logo.png" },
+    { "src": "/tabordapdf.pdf", "dest": "/tabordapdf.pdf" },
+    { "src": "/videos/(.*)", "dest": "/videos/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
