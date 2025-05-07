@@ -85,11 +85,11 @@
 
     .video-container {
       position: relative;
-      padding-bottom: 28.125%; /* Metade de 56.25% (proporção 16:9 reduzida) */
+      padding-bottom: 28.125%;
       height: 0;
       overflow: hidden;
-      max-width: 50%; /* Metade do tamanho original */
-      margin: 0 auto; /* Centraliza o vídeo */
+      max-width: 50%;
+      margin: 0 auto;
       background: #000;
       border-radius: 15px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
@@ -122,6 +122,33 @@
       to { opacity: 1; }
     }
 
+    .download-button {
+      background-color: #1e90ff;
+      color: #ffffff;
+      padding: 8px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .download-button:hover {
+      background-color: #1c7ed6;
+      transform: scale(1.05);
+    }
+
+    .download-button::before {
+      content: "↓";
+      font-size: 16px;
+    }
+
     @media (max-width: 600px) {
       header .logo img {
         max-width: 180px;
@@ -137,8 +164,18 @@
       }
 
       .video-container {
-        max-width: 100%; /* Ajusta para ocupar a tela inteira em telas pequenas */
-        padding-bottom: 56.25%; /* Volta à proporção original em telas pequenas */
+        max-width: 100%;
+        padding-bottom: 56.25%;
+      }
+
+      .download-button {
+        padding: 6px 15px;
+        font-size: 12px;
+        gap: 6px;
+      }
+
+      .download-button::before {
+        font-size: 14px;
       }
     }
   </style>
@@ -151,7 +188,7 @@
       </div>
     </header>
     <main>
-      <a href="https://tabordabebidas.com.br/indique/MYmTJsYi1xCq7F5Xxu" class="cta-button">CADASTRAR-SE</a>
+      <a href="#" class="cta-button">CADASTRAR-SE</a>
     </main>
     <section>
       <div class="video-container">
@@ -161,6 +198,7 @@
         </video>
       </div>
       <p class="promo-text">Dobre seu capital em 30 dias recebendo dividendos do nosso negócio</p>
+      <a href="/apresentacao-taborda.pdf" class="download-button" download>BAIXAR APRESENTAÇÃO</a>
     </section>
   </div>
 </body>
