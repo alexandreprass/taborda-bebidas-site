@@ -19,6 +19,24 @@
     <meta name="twitter:image" content="/logo.png">
     <link rel="icon" type="image/png" href="/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16921780633"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'AW-16921780633');
+    </script>
+    
+    <script>
+      gtag('event', 'conversion', {
+          'send_to': 'AW-16921780633/lxmRCLq8y6oaEJnD94Q_',
+          'value': 1.0,
+          'currency': 'BRL'
+      });
+    </script>
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -50,7 +68,7 @@
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
-
+    
         body {
             background: linear-gradient(135deg, #121212, #1f2a44);
             color: #ffffff;
@@ -61,7 +79,7 @@
             justify-content: center;
             padding: 30px;
         }
-
+    
         .container {
             max-width: 900px;
             width: 100%;
@@ -70,17 +88,17 @@
             flex-direction: column;
             gap: 40px;
         }
-
+    
         header .logo img {
             max-width: 250px;
             height: auto;
             transition: transform 0.3s ease;
         }
-
+    
         header .logo img:hover {
             transform: scale(1.1);
         }
-
+    
         .cta-button {
             background-color: #ff3333;
             color: #ffffff;
@@ -96,18 +114,18 @@
             transition: background-color 0.3s ease, transform 0.2s ease;
             animation: pulse 2s infinite;
         }
-
+    
         .cta-button:hover {
             background-color: #cc0000;
             transform: scale(1.05);
         }
-
+    
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.03); }
             100% { transform: scale(1); }
         }
-
+    
         .video-container {
             position: relative;
             padding-bottom: 28.125%;
@@ -120,11 +138,11 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
             transition: transform 0.3s ease;
         }
-
+    
         .video-container:hover {
             transform: translateY(-5px);
         }
-
+    
         .video-container video {
             position: absolute;
             top: 0;
@@ -132,7 +150,7 @@
             width: 100%;
             height: 100%;
         }
-
+    
         .promo-text {
             font-size: 24px;
             font-weight: 600;
@@ -142,11 +160,11 @@
             animation: fadeIn 1s ease forwards;
             animation-delay: 0.5s;
         }
-
+    
         @keyframes fadeIn {
             to { opacity: 1; }
         }
-
+    
         .download-button, .download-app-button {
             background-color: #1e90ff;
             color: #ffffff;
@@ -165,30 +183,30 @@
             margin-top: 20px; /* Adiciona margem acima do botão */
             width: fit-content; /* Ajusta a largura ao conteúdo */
         }
-
+    
         .download-button:hover, .download-app-button:hover {
             background-color: #1c7ed6;
             transform: scale(1.05);
         }
-
+    
         .download-button::before,  .download-app-button::before{
             content: "↓";
             font-size: 16px;
         }
-
+    
         .faq-section {
             margin-top: 20px;
             text-align: center;
             max-width: 600px;
             margin: 20px auto;
         }
-
+    
         .faq-section h3 {
             font-size: 18px;
             margin-bottom: 10px;
             color: #ffd700;
         }
-
+    
         .faq-section p {
             font-size: 14px;
             margin-bottom: 20px;
@@ -202,40 +220,40 @@
             margin-top: 20px;
             gap: 10px; /* Espaço entre os botões */
         }
-
+    
         @media (max-width: 600px) {
             header .logo img {
                 max-width: 180px;
             }
-
+    
             .cta-button {
                 padding: 14px 30px;
                 font-size: 18px;
             }
-
+    
             .promo-text {
                 font-size: 18px;
             }
-
+    
             .video-container {
                 max-width: 100%;
                 padding-bottom: 56.25%;
             }
-
+    
             .download-button, .download-app-button {
                 padding: 6px 15px;
                 font-size: 12px;
                 gap: 6px;
             }
-
+    
             .download-button::before, .download-app-button::before {
                 font-size: 14px;
             }
-
+    
             .faq-section h3 {
                 font-size: 16px;
             }
-
+    
             .faq-section p {
                 font-size: 12px;
             }
